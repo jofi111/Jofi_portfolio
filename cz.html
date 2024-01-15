@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="cs">        
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">        
+        <title>[JOFI] Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/d2df5cc5d7.js" crossorigin="anonymous"></script>
+    </head>
+    <body id="home">
+        <nav class="navbar navbar-dark navbar-expand-lg justify-content-center sticky-top" id="navigation">
+            <div class="container-fluid justify-content-center justify-content-sm-between">
+                <div class="navbar-brand text-white fs-5 flex-wrap px-3">
+                    <a href="#home" class="text-white text-decoration-none">
+                    <img src="images/profile_photo.jpg" alt="Logo" style="width:40px;" class="rounded-pill mx-2"> 
+                    Josef Fiala</a>
+                </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsingNavbar3" aria-controls="collapsingNavbar3" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                <div class="navbar-collapse collapse w-100 fs-6" id="collapsingNavbar3">
+                    <ul class="nav navbar-nav ms-auto w-100 justify-content-end">
+                        <li class="nav-item pt-3 pt-sm-0">
+                            <a class="nav-link text-white border border-3 border-secondary m-1 py-1" href="#about" onclick="closeNavbar()">O MNĚ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white border border-3 border-secondary m-1 py-1" href="#skills" onclick="closeNavbar()">CO SE UČÍM</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white border border-3 border-secondary m-1 py-1" href="#projects" onclick="closeNavbar()">PROJEKTY</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white border border-3 border-secondary m-1 py-1" href="#hobbies" onclick="closeNavbar()">ZÁLIBY</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white border border-3 border-secondary m-1 py-1" href="#contact" onclick="closeNavbar()">KONTAKT</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section id="header" class="d-flex">
+            <div id="overlay"></div>
+                <div class="wrapper container">
+                    <div>
+                        <p class="item">Ahoj,</p>
+                        <p class="item px-4">jmenuji se</p>
+                        <p class="item px-5 mx-2">Josef.</p>
+                        <p class="item px-5 mx-5" id="smaller">a jsem juniorní vývojář.</p>
+                    </div>
+                    <div id="linkArrowHead" class="text-center">
+                        <div class="d-none d-sm-flex">
+                            <a class="h4 text-white text-decoration-none d-inline" href="cz.html">CZ&nbsp;</a><span class="h4 text-white text-decoration-none">&nbsp;/&nbsp;</span>
+                            <a class="h4 text-white text-decoration-none" href="index.html">&nbsp;ENG</a>
+                        </div>
+                        <a class="nav-link" href="#about"><i class="d-none d-sm-block arrowTop fa-solid fa-angles-down fa-3x"></i></a>
+                    </div>
+                <div>
+        </section>
+        <nav class="navbar" id="blackline">        
+        </nav>
+        <section id="background" class="d-none d-lg-block">
+        </section>
+    <!-- ABOUT -->
+        <section id="about">
+            <div class="d-sm-none text-center pt-3">
+                <a class="h4 text-dark text-decoration-none d-inline" href="cz.html">CZ&nbsp;</a><span class="h4 text-dark text-decoration-none">&nbsp;/&nbsp;</span>
+                <a class="h4 text-dark text-decoration-none" href="index.html">&nbsp;ENG</a>
+            </div>
+            <div class="container pb-md-5 mb-md-5">
+                <div class="row pb-5" id="aboutStyle">
+                    <div class="col-lg-8 d-flex flex-column justify-content-start align-content-start">
+                        <div class="container g-5">
+                            <h3 class="p-4 my-3 display-5 border-bottom border-dark text-center text-sm-start">O mně</h3>
+                            <p class="px-0 px-md-4">
+                                V roce 2023 jsem se rozhodl zcela změnit svou kariéru a tak jsem se přihlásil na půlroční online rekvalifikační kurz <a href="http://kurzy.vsb.cz/rekval-kurzy/programovani-obsah.php" class="text-dark text-decoration-underline fst-italic text-center" target="_blank">objektově orientovaného programování a programování www aplikací</a> na VŠB-Technické univerzitě v Ostravě.
+                            </p>
+                            <p class="px-0 px-md-4">
+                                Doufám, že budu mít to štěstí a najdu dobrou společnost, kde na sobě budu moci pracovat a hlouběji rozvíjet své dovednosti. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 d-flex flex-column justify-content-center align-content-center">
+                        <img src="images/profile_smaller.jpg" class="img-fluid mx-auto d-block m-4 shadow-custom">
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- SKILLS -->
+        <section id="skills">
+            <div class="container pt-3 pt-lg-0 g-0 g-md-5 mb-md-5 pb-md-5 bor4">
+                <div class="row pb-2" id="skillsStyle">
+                    <div class="col-12 justify-content-start align-content-start bor5">
+                        <div class="container text-center">
+                            <h3 class="py-3 display-5 fst-italic border-bottom border-secondary">Co se učím (přibyde více):</h3>
+                            <div class="skills-review row">
+                            <div class = "skills-main">
+                            <!-- <h3>WWW</h3> -->
+                            </div>
+                            <div class="col lg-4 one-skill">
+                                <div class="skill-img">
+                                    <img src="images/icons/html5.png" alt="" class="">
+                                    <p>HTML5</p>
+                                </div>
+                                </div>
+                                <div class="col lg-4 one-skill">
+                                <div class="skill-img">
+                                    <img src="images/icons/css3.png" alt="" class="">
+                                    <p>CSS3</p>
+                                </div>
+                                </div>
+                                <div class="col lg-4 one-skill">
+                                <div class="skill-img">
+                                    <img src="images/icons/javascript.png" alt="" class="">
+                                    <p>JavaScript</p>
+                                </div>
+                                </div>    
+                                <div class="col lg-4 one-skill">
+                                <div class="skill-img">
+                                    <img src="images/icons/react.png" alt="" class="">
+                                    <p>React</p>
+                                </div>
+                                </div> 
+                                <div class="col lg-4 one-skill">
+                                <div class="skill-img">
+                                    <img src="images/icons/bootstrap.png" alt="" class="">
+                                    <p>Bootstrap</p>
+                                </div>
+                                </div> 
+                                <div class="col lg-4 one-skill">
+                                <div class="skill-img">
+                                    <img src="images/icons/php.png" alt="" class="">
+                                    <p>PHP</p>
+                                </div>
+                                </div> 
+                                </div>
+                                <div class="skills-review row">
+                                <div class = "skills-main">
+                                <!-- <h3>Databases</h3> -->
+                                </div>
+                                <div class="col lg-4 one-skill">
+                                <div class="skill-img">
+                                    <img src="images/icons/acces.png" alt="" class="">
+                                    <p>Access</p>
+                                </div>
+                                </div>
+                                <div class="col lg-4 one-skill">
+                                <div class="skill-img">
+                                    <img src="images/icons/oraclesql.png" alt="" class="">
+                                    <p>Oracle Database</p>
+                                </div>
+                                </div>
+                                <div class="col lg-4 one-skill">
+                                <div class="skill-img">
+                                    <img src="images/icons/plsql.png" alt="" class="">
+                                    <p>PL/SQL</p>
+                                </div>
+                                </div>
+                                <div class="col lg-4 one-skill">
+                                <div class="skill-img">
+                                    <img src="images/icons/mssqlserver.png" alt="" class="">
+                                    <p>MS SQL Server</p>
+                                </div>
+                                </div>
+                                </div>
+                                <div class="skills-review row">
+                                <div class = "skills-main">
+                                <!-- <h3>OOP</h3> -->
+                                </div>
+                                <div class="col lg-4 one-skill">
+                                <div class="skill-img">
+                                    <img src="images/icons/c-sharp.png" alt="" class="">
+                                    <p>C#</p>
+                                </div>
+                                </div>
+                                <div class="col lg-4 one-skill">
+                                <div class="skill-img">
+                                    <img src="images/icons/aspdotnet.png" alt="" class="">
+                                    <p>ASP.NET MVC</p>
+                                </div>
+                                </div>
+                                <div class="col lg-4 one-skill">
+                                <div class="skill-img">
+                                    <img src="images/icons/java.png" alt="" class="">
+                                    <p>JAVA</p>
+                                </div>
+                                </div>
+                                <div class="col lg-4 one-skill">
+                                <div class="skill-img">
+                                    <img src="images/icons/azure-devops.png" alt="" class="">
+                                    <p>Azure DevOps</p>
+                                </div>
+                                </div>
+                                </div>
+                            </div>                  
+                        </div>
+                    </div>   
+                </div>
+            </div>
+        </section>    
+    <!-- PROJECTS -->
+        <section id="projects">
+            <div class="container pt-3 pt-lg-0 py-lg-5 my-lg-5 text-center align-items-center justify-content-center">
+                <h3 class="py-3 mt-3 display-5 fst-italic border-bottom border-dark">Projekty, na kterých jsem pracoval především v rámci kurzu programování (Průběžně doplňováno):</h3>
+                <div class="row mb-5 bor3">
+                    <div class="col-md-6 col-lg-4 p-3">
+                        <div class="container g-2 text-center">
+                            <div class="card h6 cardEdge cardSize">
+                                <img src="images/Portfolio.png" alt="portfolio" class="card-image-top">
+                                <div class="card-body">
+                                    <h2 class="card-title h4 border-bottom fw-bold fst-italic titleSize">Toto portfolio</h2>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">
+                                            <p class="card-text text-center bodySize">
+                                                Toto portfolio je stále doplňováno novými věcmi, které se učím. Je to zábava dávat sem hotové a funkční věci. Mám rád když se mi něco povede.
+                                            </p>
+                                        </li>
+                                        <!-- <li class="list-group-item d-flex align-items-center justify-content-center"><img
+                                                class="px-2 animated2 icon" src="images/bazen2.jpg" alt=""
+                                                data-bs-toggle="tooltip" data-bs-placement="top" title="HTML5"><img
+                                                class="px-2 animated2 icon" src="images/technologies/css3_xs.png" alt=""
+                                                data-bs-toggle="tooltip" data-bs-placement="top" title="CSS3"><img
+                                                class="px-2 animated2 icon" src="images/technologies/bootstrap_xs.png" alt=""
+                                                data-bs-toggle="tooltip" data-bs-placement="top" title="Bootstrap5"></li> -->
+                                        <li class="list-group-item align-items-center justify-content-center">
+                                            <a href="https://github.com/jofi111/Jofi_portfolio.git" 
+                                                target="_blank"
+                                                class="card-link">
+                                                <button type="button" class="btn btn-secondary mx-2">GitHub</button>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="col-md-6 col-lg-4 p-3">
+                        <div class="container g-2 text-center">
+                            <div class="card h6 cardEdge cardSize">
+                                <img src="images/hotelbooking.png" alt="hotel" class="card-image-top">
+                                <div class="card-body">
+                                    <h2 class="card-title h4 border-bottom fw-bold fst-italic titleSize">Další malá webovka</h2>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">
+                                            <p class="card-text text-center bodySize">
+                                                Výsledek 8 hodin dlouhého snažení v jednom z rekvalifikačních cvičení. Pracoval jsem sám a použil většinu základních komponent bootstrapu. Tohle je rezervační stránka fiktivního hotelu. (v češtině)
+                                            </p>
+                                        </li>
+                                        <li class="list-group-item align-items-center justify-content-center">
+                                            <a href="bootstrap_portfolio/bootstrap.html" 
+                                                target="_blank" class="card-link">
+                                                <button type="button" class="btn btn-secondary mx-2">Demo</button></a>
+                                            <a href="https://github.com/jofi111/bootstrap_hotel.git" 
+                                                target="_blank"
+                                                class="card-link">
+                                                <button type="button" class="btn btn-secondary mx-2">GitHub</button>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 p-3">
+                        <div class="container g-2 text-center">
+                            <div class="card h6 cardEdge cardSize">
+                                <img src="images/kola.png" alt="flightTicket" class="card-image-top">
+                                <div class="card-body">
+                                    <h2 class="card-title h4 border-bottom fw-bold fst-italic titleSize">Jednoduchý rezervační formulář</h2>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">
+                                            <p class="card-text text-center bodySize">Rezervační formulář pro zapůjčení kola vytvořený pomocí JavaScriptu. (v češtině)
+                                            </p>
+                                        </li>                                       
+                                        <li class="list-group-item">
+                                            <a href="javascript_portfolio/javascript.html" 
+                                                target="_blank" class="card-link">
+                                                <button type="button" class="btn btn-secondary mx-2">Demo</button>
+                                            </a>
+                                            <a href="https://github.com/jofi111/javascript_bikerental.git"
+                                                target="_blank" class="card-link">
+                                                <button type="button" class="btn btn-secondary mx-2">GitHub</button>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 p-3">
+                        <div class="container g-2 text-center">
+                            <div class="card h6 cardEdge cardSize">
+                                <img src="images/planvykopu.png" alt="flightTicket" class="card-image-top">
+                                <div class="card-body">
+                                    <h2 class="card-title h4 border-bottom fw-bold fst-italic titleSize">Projekt v Reactu</h2>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">
+                                            <p class="card-text text-center bodySize">Aplikace pro plánování výkopových prací vytvořená v rámci celodenního cvičení. 1. zadej zaměstnance, 2. po přepnutí na kartu úkol zadej čas a počet metrů potřebných k vykopání. Tlačítko zezelená pokud je výkon zaměstnanců a náročnost úkolu v rovnováze. (v češtině, umístěno na bezplatném hostingu bez soukromého připojení, ale nebojte se a klidně otevřete odkaz i přes varování některých prohlížečů)</p>
+                                        </li>                                        
+                                        <li class="list-group-item">
+                                            <a href="http://jofireactproject.wz.cz" 
+                                                target="_blank" class="card-link">
+                                                <button type="button" class="btn btn-secondary mx-2">Demo</button>
+                                            </a>
+                                            <a href="https://github.com/jofi111/reactzk.git"
+                                                target="_blank" class="card-link">
+                                                <button type="button" class="btn btn-secondary mx-2">GitHub</button>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 p-3">
+                        <div class="container g-2 text-center">
+                            <div class="card h6 cardEdge cardSize">
+                                <img src="images/phpmyqsljofi.png" alt="flightTicket" class="card-image-top">
+                                <div class="card-body">
+                                    <h2 class="card-title h4 border-bottom fw-bold fst-italic titleSize">PHP/MySQL projekt</h2>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">
+                                            <p class="card-text text-center bodySize">Systém pro registrované uživatele vytvořen v rámci dalšího celodenního cvičení. Jednoduchý systém, kde je část stránek přístupná pouze přihlášeným uživatelům. Přihlásit se mohou pouze uživatelé, kteří se na webu zaregistrují. (v češtině)
+                                            </p>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="phpmysql_portfolio/index.php" 
+                                                target="_blank" class="card-link">
+                                                <button type="button" class="btn btn-secondary mx-2">Demo</button>
+                                            </a>
+                                            <a href="https://github.com/jofi111/PHP_MySQL_project.git"
+                                                target="_blank" class="card-link">
+                                                <button type="button" class="btn btn-secondary mx-2">GitHub</button>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 p-3">
+                        <div class="container g-2 text-center">
+                            <div class="card h6 cardEdge cardSize">
+                                <img src="images/ASPSkolawebapp.png" alt="webApp" class="card-image-top">
+                                <div class="card-body">
+                                    <h2 class="card-title h4 border-bottom fw-bold fst-italic titleSize">Projekt ASP.NET Core MVC s Entity Framework pro práci s databází MS SQL a Identity Framework pro přihlašování</h2>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">
+                                            <p class="card-text text-center bodySize">
+                                                ASP.NET projekt školního systému pro registraci známek, předmětů, studentů a učitelů na fiktivní škole (v angličtině).
+                                                Tato webová aplikace umožňuje různým uživatelským rolím vidět různý obsah. Vyzkoušejte si roli:
+                                                žáka - uživatelské jméno Anna,
+                                                učitele - uživatelské jméno Ted,
+                                                admina - uživatelské jméno admin.
+                                                Heslem jsou první 4 písmena abecedy (první velké), první 4 číslice (od 1) a na konci tečka.
+                                            </p>
+                                        </li>
+                                        <li class="list-group-item align-items-center justify-content-center">
+                                            <a href="https://schoolwebappjofi.azurewebsites.net" 
+                                                target="_blank" class="card-link">
+                                                <button type="button" class="btn btn-secondary mx-2">Demo</button>
+                                            </a>
+                                            <a href="https://github.com/jofi111/ASP.NETSkola.git" 
+                                                target="_blank"
+                                                class="card-link">
+                                                <button type="button" class="btn btn-secondary mx-2">GitHub</button>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="col-md-6 col-lg-4 p-3">
+                        <div class="container g-2 text-center">
+                            <div class="card h6 cardEdge cardSize">
+                                <img src="images/SpringReactWeather.png" alt="webApp" class="card-image-top">
+                                <div class="card-body">
+                                    <h2 class="card-title h4 border-bottom fw-bold fst-italic titleSize">Java Spring projekt s reactem</h2>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">
+                                            <p class="card-text text-center bodySize">Aplikace informující o počasí ve vybraných městech vytvořená během dvou dní v rámci kurzu.</p>
+                                        </li>                                        
+                                        <li class="list-group-item align-items-center justify-content-center">
+                                            <a href="https://jofi.wz.cz/springreact/index.html" 
+                                                target="_blank" class="card-link">
+                                                <button type="button" class="btn btn-secondary mx-2">Demo</button>
+                                            </a>
+                                            <a href="https://github.com/jofi111/Java-Spring-weather-app.git" 
+                                                target="_blank"
+                                                class="card-link">
+                                                <button type="button" class="btn btn-secondary mx-2">GitHub</button>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </section>
+    <!-- HOBBIES -->
+        <section id="hobbies">
+            <div class="container text-center bor5 pb-sm-5 mb-sm-5 mt-5" id="hobbiesStyle">
+                <h3 class="p-4 my-3 display-5 fst-italic border-bottom border-dark">Mé záliby: </h3>
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <div id="myCarousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators bg-white bar">                           
+                                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" class="active" aria-current="true" aria-label="Slide 2"></button>                            
+                                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>                            
+                                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-current="true" aria-label="Slide 4"></button>                            
+                                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>                
+                            </div>
+                            <div class="carousel-inner pb-3 justify-content-center align-items-center text-center">
+                                <div class="carousel-item active" data-bs-interval="8000">
+                                    <img src="images/hobbies/01travelling.jpg" class="img-fluid" alt="Yellowstone">
+                                    <div class="carousel-caption d-none d-md-block box bg-light text-dark">
+                                        <h5>Cestování, to je moje vášeň<br>...na naší krásné planetě je tolik úžasných a zajímavých míst.</h5>
+                                    </div>
+                                </div>                            
+                                <div class="carousel-item" data-bs-interval="8000">
+                                    <img src="images/hobbies/02roomate.jpeg" class="img-fluid" alt="Hufik">
+                                    <div class="carousel-caption d-none d-md-block box bg-light text-dark">
+                                        <h5>Můj činčilák. Už má občanku, tzn. je mu 15 let.</h5>
+                                    </div>
+                                </div>                            
+                                <div class="carousel-item" data-bs-interval="8000">
+                                    <img src="images/hobbies/03hiking.jpg" class="img-fluid" alt="Yosemite">
+                                    <div class="carousel-caption d-none d-md-block box bg-light text-dark">
+                                        <h5>Horská turistika</h5>
+                                    </div>
+                                </div>                            
+                                <div class="carousel-item" data-bs-interval="8000">
+                                    <img src="images/hobbies/06culture.jpg" class="img-fluid" alt="Rudolfinum">
+                                    <div class="carousel-caption d-none d-md-block box bg-light text-dark">
+                                        <h5>Kultura</h5>
+                                    </div>
+                                </div>                            
+                                <div class="carousel-item" data-bs-interval="8000">
+                                    <img src="images/hobbies/05helpingnature.jpg" class="img-fluid" alt="Sequoia">
+                                    <div class="carousel-caption d-none d-md-block box bg-light text-dark">
+                                        <h5>Rád pomáhám přírodě :)</h5>
+                                    </div>
+                                </div>
+                                <!--  <div class="carousel-item" data-bs-interval="8000">
+                                    <img src="images/hobbies/04runningforrest.jpg" class="img-fluid" alt="...">
+                                    <div class="carousel-caption d-none d-md-block box bg-light text-dark">
+                                        <h5>Running in the forrest or in the city</h5>
+                                    </div>
+                                </div> --> 
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon bg-dark control" aria-hidden="true"></span>
+                                <span class="visually-hidden">Předchozí</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon bg-dark control" aria-hidden="true"></span>
+                                <span class="visually-hidden">Další</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 pl-md-4 pt-3 pt-md-0 text-start">
+                        <h3><i>Co mám rád:</i></h3>
+                        <ul>
+                            <li>Cestování</li>
+                            <li>Zvířata</li>
+                            <li>Turistiku</li>
+                            <li>Běhání</li>
+                            <li>Operu</li>
+                            <li>Divadlo a kino</li>
+                            <li>Poznávání nových věcí</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- KONTAKT -->
+        <section id="contact">
+            <div class="container mt-5">
+                <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <br>
+                    <h2 class="mb-4">Kontaktní formulář</h2>
+                    <form id="contactForm" method="post">
+                        <div class="form-group">
+                        <label for="name">Jméno</label>
+                        <input type="text" class="form-control" id="name" name="name" required placeholder="Sem jméno">
+                        </div>                  
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" required placeholder="Sem emailovou adresu">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Předmět</label>
+                            <input type="subject" class="form-control" id="subject" name="subject" required placeholder="Téma?">
+                        </div>                  
+                        <div class="form-group">
+                            <label for="message">Vzkaz</label>
+                            <textarea class="form-control" id="message" name="message" rows="4" required placeholder="Místo pro zprávu"></textarea>
+                        </div>
+                        <br>
+                        <button type="submit" class="btn btn-primary">Odeslat</button>
+                        <br>
+                        <br>
+                    </form>
+                </div>
+                </div>
+            </div>
+        </section>
+    <!-- FOOTER -->  
+        <div class="container-fluid mt-5" id="footer">
+            <ul class="nav text-center justify-content-between flex-column flex-sm-row">
+                <li class="nav-item">
+                    <a id="github" href="https://github.com/jofi111" target="_blank" class="nav-link text-white d-flex justify-content-center align-items-center"><i class="bi bi-github d-inline h1"></i>&nbsp;GitHub</a>
+                </li>
+                <li class="nav-item pt-3">
+                    <p class="text-white">&copy;&nbsp;JOFI 2023</p>
+                </li>
+                <li class="nav-item">
+                    <a id="linkedin" href="https://www.linkedin.com/in/jofi/" target="_blank" class="nav-link text-white d-flex justify-content-center align-items-center"><i class="bi bi-linkedin h1"></i>&nbsp;LinkedIn</a>
+                </li>
+            </ul>
+        </div>
+        <!-- Zalezi na poradi, prvni query, pak popper, pak az bootstrap!!! Jinak nebude fungovat spravne, jestli vubec. -->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+        <script src="js/smooth-scroll.polyfills.min.js"></script>
+        <script>
+            let warn = document.querySelector('.contactButton');
+            warn.onclick = function(){
+                document.querySelector('textarea').innerHTML='Have you read the red title above the text area?!';
+            }
+        </script>
+        <!-- decentni nabeh u navigace -->
+        <script>
+            $(document).on('click', 'a.nav-link', function (event) {
+                    event.preventDefault();
+                    console.log("CLICKED ANCHOR!");
+
+                    $('html, body').animate({
+                        scrollTop: $($.attr(this, 'href')).offset().top - $(".navbar.sticky-top").height()
+                    }, 100);
+            });
+        </script>
+        <!-- tool tip -->
+        <script>
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl)
+            })
+        </script>
+        <!-- Vyreseny nefunkcni nav-link -->
+        <script>
+            document.getElementById("github").onclick = function () {
+            location.href = "https://github.com/jofi111";
+            };
+        </script>
+        <script>
+            document.getElementById("linkedin").onclick = function () {
+            location.href = "https://www.linkedin.com/in/jofi/";
+            };
+        </script>
+        <!-- sbaleni burgru 
+        <script>$('.navbar-nav>li>a').on('click', function () {
+                $('.navbar-collapse').collapse('hide');
+            });
+        </script> -->
+        <script>
+            function closeNavbar() {
+            // Zavřít navigační menu po kliknutí na odkaz
+            var navCollapse = document.getElementById("collapsingNavbar3");
+            if (navCollapse.classList.contains("show")) {
+                navCollapse.classList.remove("show");
+            }
+            }
+        </script> 
+        <!--Contact form -->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script>
+            $('#contactForm').submit(function(event) {
+            event.preventDefault();
+            const formData = $(this).serialize();
+            $.ajax({
+                type: 'POST',
+                url: './contact_handler.php',
+                data: formData,
+                success: function(response) {
+                    alert("Zpráva úspěšně odeslána :o) Děkuji!");
+                    $('#contactForm').trigger("reset");
+                    },
+                error: function() {
+                    alert("Vyskytla se chyba v odeslání. Prosím napište mi zprávu na reach@jofi.wz.cz");
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>
